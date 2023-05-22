@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.user-pick.active-pick{
+border-bottom-width: 4px;
+border-style: solid;
+border-color: orange;
+}
+
+.user-text{
+    display: none;
+}
+.user-text.active-text{
+    display:flex;
+}
+
+.question-text{
+    display: none;
+}
+

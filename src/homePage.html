@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden">
+  <header>
+    <nav class="md:flex md:justify-between md:items-center container mx-auto">
+      <div class="flex justify-between items-center">
+        <span class="cursor-pointer"><img class="h-32 inline"
+            src="../BicycleImages/fahren-sie-festes-ikonen-navigations-und-transportzeichen-rad-93459942.jpg" alt="">
+        </span>
+        <span class="text-3xl cursor-pointer md:hidden block mx-2">
+          <ion-icon name="menu-outline"  onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+
+      <div>
+        <ul class="md:flex md:text-2xl md:items-center  md:z-auto md:static absolute bg-white w-full left-0 py-4 pl-7
+        md:opacity-100 opacity-0 top-[-400px] trasition-all ease-in ">
+          <li class="mx-4 my-6 md:my-0"><a href="#home" class="text-xl md:text-2xl hover:text-[#8CDD00] duration-500">Home</a></li>
+          <li class="mx-4 my-6 md:my-0"><a href="#about" class="text-xl md:text-2xl hover:text-[#8CDD00] duration-500">About</a></li>
+          <li class="mx-4 my-6 md:my-0"><a href="#ebike" class="text-xl md:text-2xl hover:text-[#8CDD00] duration-500">E-bike</a></li>
+          <li class="mx-4 my-6 md:my-0"><a href="./signIn.html" class="text-xl md:text-2xl hover:text-[#8CDD00] duration-500">Sign In</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      function Menu(e){
+        let list=document.querySelector('ul');
+        e.name==='menu-outline' ? (e.name="close-outline",list.classList.add('top-[90px]') ,list.classList.add('opacity-100')):
+        (e.name="menu-outline",list.classList.add('top-[90px]') ,list.classList.remove('opacity-100'));
+      }
+    </script>
+
+  </header>
+  <section>
+    <div class="container flex flex-col lg:flex-row items-center gap-12  mx-auto justify-center">
+      <div class="flex flex-1 flex-col items-center lg:items-start ml-14">
+        <p
+          class="text-4xl -ml-52 md:ml-0 md:text-4xl lg:text-7xl text-center lg:text-left mb-6 font-semibold text-gray-800 tracking-wider">
+          EXPERIENCE </p>
+        <p
+          class="text-4xl -ml-60 md:ml-0 md:text-4xl lg:text-7xl  text-center lg:text-left mb-6 font-semibold text-gray-800 tracking-wider">
+          NEW
+          <span
+            class="text-4xl md:text-4xl  text-center lg:text-7xl lg:text-left mb-6 font-bold text-[#8CDD00] tracking-wider ">RIDE</span>
+        </p>
+        <p class="md:text-lg hidden text-center lg:text-left mb-6 md:w-[350px]">Lorem ipsum dolor sit amet consectetur. Non pulvinar
+          tortor
+          ullamcorper elit suspendisse tellus.
+        </p>
+        <div class="hidden md:block ml-20 ">
+          <button class="bg-[#8CDD00] text-color-secondary-white px-7 py-3
+                        rounded-full font-bold ">
+            BUY NOW
+          </button>
+        </div>
+      </div>
+      <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 mr-20">
+        <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="../BicycleImages/pngegg.png" alt="...">
+      </div>
+      <div class="flex justify-center flex-wrap gap-6 ml-20 mb-14 md:hidden">
+        <button class="bg-[#8CDD00] text-color-secondary-white px-7 py-3
+                      rounded-full font-bold">
+          BUY NOW
+        </button>
+      </div>
+
+    </div>
+  </section>
+  <section id="about">
+    <div class="container flex flex-col lg:flex-row items-center gap-12  mx-auto justify-between">
+      <p class="text-3xl md:text-4xl lg:text-8xl text-center lg:text-left mb-6  tracking-widest
+         font-extralight italic md:w-[800px] w-[300px]">Positive Impact of E-Bikes</p>
+      <p class="text-3xl md:text-4xl lg:text-xl  lg:text-center mb-6 text-black tracking-widest
+         font-extralight italic w-[500px]">E-bikes good for the environment, they are also beneficial for you health
+        and well-being biking can provide a low-impact cardiovascular workout and help reduce stress.</p>
+    </div>
+    <div class="md:container flex lg:flex-row items-center md:gap-12 gap-20  md:mx-auto justify-between mt-16">
+      <p class="text-3xl md:text-4xl lg:text-8xl text-center lg:text-left mb-6 tracking-widest
+          italic font-semibold md:ml-40 ml-10">25%</p>
+      <p class="text-3xl md:text-4xl lg:text-8xl  lg:text-center mb-6 text-black tracking-widest font-semibold
+          italic md:mr-96 mr-40">30%</p>
+    </div>
+    <div class="md:container flex  lg:flex-row items-center gap-12  md:mx-auto justify-between mt-16 mb-16 -ml-32">
+      <p class="text-3xl md:text-4xl lg:text-xl   mb-6 text-black tracking-widest
+         font-extralight italic w-[400px] ml-40">Treduction in commuter transportation carbon emissions</p>
+      <p class="text-3xl md:text-4xl lg:text-xl  mb-6 text-black tracking-widest
+        font-extralight italic w-[400px] mr-60">Treduction in commuter transportation carbon emissions</p>
+    </div>
+  </section>
+  <section>
+    <div class="flex">
+      <div class="w-1/3  bg-black">
+        <p
+          class="text-white flex justify-center items-center m-auto h-full text-3xl font-extralight w-[200px] text-center">
+          High quality materials</p>
+      </div>
+      <div class="w-1/3"><img src="../BicycleImages/aaceda78c3483311b8743e4313560ec1.jpg" alt=""></div>
+      <div class="w-1/3 bg-black">
+        <p
+          class="text-white flex justify-center items-center m-auto h-full text-3xl font-extralight w-[200px] text-center">
+          Advanced Technology</p>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="w-1/3"><img src="../BicycleImages/james-hoey-T0eAoLwZB88-unsplash.jpg" alt=""></div>
+      <div class="w-1/3  bg-black">
+        <p
+          class="text-white flex justify-center items-center m-auto h-full text-3xl font-extralight w-[200px] text-center">
+          Sustainable Practices</p>
+      </div>
+      <div class="w-1/3"><img src="../BicycleImages/james-hoey-T0eAoLwZB88-unsplash.jpg" alt=""></div>
+    </div>
+  </section>
+  <section id="ebike">
+    <div class=" text-center w-full mb-12 mt-12 ">
+      <p class="text-7xl font-semibold mb-4">Explore <span
+          class="text-7xl font-semibold mb-4 text-green-400">eBike</span></p>
+    </div>
+    <div class="flex flex-wrap text-center py-5 justify-between">
+      <div
+        class="sm:w-2/5 mb-10 px-4 bg-gradient-to-b from-[#8FEB98] to-[#DDEFE6] md:ml-14 drop-shadow-md rounded-lg relative">
+        <div class="absolute left-5 top-5 text-left lg:text-left">
+          <p class="text-6xl font-extrabold text-green-600 ">STRAVARDO</p>
+          <p class="text-4xl font-extrabold text-slate-700 mt-4">$450</p>
+        </div>
+        <img class="mt-20 ml-9" alt="content" src="../BicycleImages/b1.png">
+        <button
+          class="mb-10 bg-[#8CDD00] text-black px-11 py-3 rounded-full font-bold bg-gradient-to-l from-[#62B75B] to-[#D6CE1D]">
+          See details
+        </button>
+      </div>
+      <div
+        class="sm:w-2/5 mb-10 px-4 bg-gradient-to-b from-[#8FEB98] to-[#DDEFE6] md:mr-14 drop-shadow-md rounded-lg relative">
+        <div class="absolute left-5 top-5 text-left lg:text-left">
+          <p class="text-6xl font-extrabold text-green-600 ">STRAVARDO</p>
+          <p class="text-4xl font-extrabold text-slate-700 mt-4">$450</p>
+        </div>
+        <img class="mt-20 ml-16" alt="content" src="../BicycleImages/b2.png">
+        <button
+          class="mb-10 bg-[#8CDD00] text-black px-11 py-3 rounded-full font-bold bg-gradient-to-l from-[#62B75B] to-[#D6CE1D] ">
+          See details
+        </button>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap text-center py-5 justify-between">
+      <div
+        class="sm:w-2/5 mb-10 px-4 bg-gradient-to-b from-[#8FEB98] to-[#DDEFE6] md:ml-14 drop-shadow-md rounded-lg relative">
+        <div class="absolute left-5 top-5 text-left lg:text-left">
+          <p class="text-6xl font-extrabold text-green-600 ">STRAVARDO</p>
+          <p class="text-4xl font-extrabold text-slate-700 mt-4">$450</p>
+        </div>
+        <img class="mt-20 ml-10" alt="content" src="../BicycleImages/b3.png">
+        <button
+          class="mb-10 bg-[#8CDD00] text-black px-11 py-3 rounded-full font-bold bg-gradient-to-l from-[#62B75B] to-[#D6CE1D] ">
+          See details
+        </button>
+      </div>
+      <div
+        class="sm:w-2/5 mb-10 px-4 bg-gradient-to-b from-[#8FEB98] to-[#DDEFE6] md:mr-14 drop-shadow-md rounded-lg relative">
+        <div class="absolute left-5 top-5 text-left lg:text-left">
+          <p class="text-6xl font-extrabold text-green-600 ">STRAVARDO</p>
+          <p class="text-4xl font-extrabold text-slate-700 mt-4">$450</p>
+        </div>
+        <img class="mt-44 ml-20" alt="content" src="../BicycleImages/b4.png">
+        <button
+          class="mb-10 bg-[#8CDD00] text-black px-11 py-3 rounded-full font-bold bg-gradient-to-l from-[#62B75B] to-[#D6CE1D]">
+          See details
+        </button>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap text-center py-5 justify-between">
+      <div
+        class="sm:w-2/5 mb-10 px-4 bg-gradient-to-b from-[#8FEB98] to-[#DDEFE6] md:ml-14 drop-shadow-md rounded-lg relative">
+        <div class="absolute left-5 top-5 text-left lg:text-left">
+          <p class="text-6xl font-extrabold text-green-600 ">STRAVARDO</p>
+          <p class="text-4xl font-extrabold text-slate-700 mt-4">$450</p>
+        </div>
+        <img class="mt-24 " alt="content" src="../BicycleImages/bicycle-png-45192.png">
+        <button
+          class="mt-24 bg-[#8CDD00] text-black px-11 py-3 rounded-full font-bold bg-gradient-to-l from-[#62B75B] to-[#D6CE1D]">
+          See details
+        </button>
+      </div>
+      <div
+        class=" sm:w-2/5 mb-10 px-4 bg-gradient-to-b from-[#8FEB98] to-[#DDEFE6] md:mr-14 drop-shadow-md rounded-lg relative">
+        <div class="absolute left-5 top-5 text-left lg:text-left">
+          <p class="text-6xl font-extrabold text-green-600 ">STRAVARDO</p>
+          <p class="text-4xl font-extrabold text-slate-700 mt-4">$450</p>
+        </div>
+        <img class="mt-24" alt="content" src="../BicycleImages/bicycle-png-45202.png">
+        <button
+          class="mb-10 bg-[#8CDD00] text-black px-11 py-3 rounded-full font-bold bg-gradient-to-l from-[#62B75B] to-[#D6CE1D]">
+          See details
+        </button>
+      </div>
+    </div>
+  </section>
+  <footer class="text-black body-font bg-[#D9D9D9]">
+    <div class=" px-5 py-12 flex flex-wrap md:flex-row  md:justify-evenly text-center">
+
+      <div class="flex  text-center justify-evenly relative  md:w-3/5 w-[400px] ">
+        <img class="md:w-[200px] absolute md:left-10 md:bottom-48 -left-14 w-[150px] bottom-72"
+          src="../BicycleImages/download.png" alt="">
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4 ml-40">
+          <h2 class=" font-semibold text-black tracking-widest text-2xl mb-3">Our Locations</h2>
+          <nav class="list-none mb-10 leading-[3rem]">
+            <li>
+              <a class="font-normal text-xl hover:text-gray-800">Myanmar</a>
+            </li>
+            <li>
+              <a class="font-normal text-xl hover:text-gray-800">Dubai</a>
+            </li>
+            <li>
+              <a class="font-normal text-xl hover:text-gray-800">Singapore</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4 ml-20">
+          <h2 class=" font-semibold text-black  text-2xl mb-3">Useful Links</h2>
+          <nav class="list-none mb-10 leading-[3rem]">
+            <li>
+              <a class="font-normal hover:text-gray-800 text-xl">About</a>
+            </li>
+            <li>
+              <a class="font-normal hover:text-gray-800 text-xl">Privacy Policy</a>
+            </li>
+            <li>
+              <a class="font-normal hover:text-gray-800 text-xl">Accessibility</a>
+            </li>
+            <li>
+              <a class="font-normal hover:text-gray-800 text-xl">Support</a>
+            </li>
+            <li>
+              <a class="font-normal hover:text-gray-800 text-xl">Shops</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+
+      <div class="lg:w-1/6 md:w-1/2 w-full px-4 ml-20 ">
+        <h2 class=" font-semibold text-black text-2xl mb-3">Keep in Touch</h2>
+        <nav class="list-none mb-10 leading-[2rem]">
+          <li>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="ml-3">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-10 h-10" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-10 h-10" viewBox="0 0 24 24">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                  </path>
+                </svg>
+              </a>
+              <a class="ml-3">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="0" class="w-10 h-10" viewBox="0 0 24 24">
+                  <path stroke="none"
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+              <a class="ml-3">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-10 h-10" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+            </span>
+          </li>
+          <li>
+            <a class="text-base font-semibold ">Sign-up for our update</a>
+          </li>
+          <li>
+            <div class="flex md:flex-col flex-row w-40 sm:w-auto xl:mr-4 lg:mr-0  ">
+              <input type="text" name="footer-field" class="md:w-full w-[200px] bg-gray-100
+                 bg-opacity-50 text-base outline-none text-gray-700 
+                 py-1 px-3 leading-8 duration-200 ease-in-out border-solid border-2 border-gray-700"
+                placeholder="Enter your email">
+              <div>
+                <button class="lg:mt-5  bg-[#8AA38A] border-2 border-gray-700 py-1 px-8
+                hover:bg-indigo-600 md:ml-24 ml-5">Subscribe</button>
+              </div>
+            </div>
+
+      </div>
+
+    </div>
+    </div>
+  </footer>
+</body>
+
+</html>
